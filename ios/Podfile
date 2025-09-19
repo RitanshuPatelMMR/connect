@@ -1,4 +1,5 @@
 # Resolve react_native_pods.rb with node to allow for hoisting
+ENV['RCT_NEW_ARCH_ENABLED'] = '0'
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
@@ -31,5 +32,6 @@ target 'zegocloud' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    use_frameworks! :linkage => :static
   end
 end
