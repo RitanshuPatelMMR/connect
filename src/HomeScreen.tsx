@@ -1,8 +1,7 @@
 import { Pressable, StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-import { useNavigation, useNavigationState } from '@react-navigation/native';
-
+import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
    const navigation = useNavigation();
@@ -25,7 +24,7 @@ const HomeScreen = () => {
          <Text style={styles.title}>Welcome to Zego Cloud</Text>
          <Text style={styles.subtitle}>Your gateway to seamless communication</Text>
          <Pressable
-         onPress={() => navigation.navigate('Call')}
+         onPress={() => navigation.navigate('UserName')} // Navigate to the new screen
            style={({ pressed }) => [
              styles.Callbutton,
              {
@@ -42,9 +41,7 @@ const HomeScreen = () => {
  );
 };
 
-
 export default HomeScreen;
-
 
 const styles = StyleSheet.create({
  container: {
