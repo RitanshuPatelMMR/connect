@@ -2062,6 +2062,16 @@
   resolved "https://registry.yarnpkg.com/@vscode/sudo-prompt/-/sudo-prompt-9.3.1.tgz#c562334bc6647733649fd42afc96c0eea8de3b65"
   integrity sha512-9ORTwwS74VaTn38tNbQhsA5U44zkJfcb0BdTSyyG6frP4e8KMtHuTXYmwefe5dpL8XB1aGSIVTaLjD3BbWb5iA==
 
+"@zegocloud/zego-uikit-prebuilt-call-rn@^6.5.11":
+  version "6.5.11"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-call-rn/-/zego-uikit-prebuilt-call-rn-6.5.11.tgz#c861ee5506cffff44b9fb0039d9faad9c9b90856"
+  integrity sha512-vWS9nY3UqrBWUiau7i0cf03Yo1uEYGBhBMcEAjpJPN/k8Q5tBOky2Zo36lB5UGUWPLEP43OA83bLTR+jV21OMw==
+
+"@zegocloud/zego-uikit-rn@^2.18.8":
+  version "2.18.8"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.18.8.tgz#574561fa351a7362a1a417450471fdad1abb095c"
+  integrity sha512-04+tP+FQGBWPwKTrjOQC9cfVE4s5vXZz9DbrleNJu+O2oZ7FaPOipe+A4YAK/SV5BTynNzkkptMd5Mv5XuDAbQ==
+
 abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
@@ -5420,7 +5430,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -5483,6 +5493,13 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-delegate-component@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-delegate-component/-/react-delegate-component-1.0.0.tgz#c17f9e15afbea4e1d83553bf960f17c8835aaf52"
+  integrity sha512-xdpNHPoiBQF0Ob4z5EqQUEK2sBjy0ooXe9xqsLlaA19l5dUASu3mIkfXMdBmMLCSfByPa0NluEN6BUDaI5EnlQ==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-devtools-core@^6.1.1:
   version "6.1.5"
   resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-6.1.5.tgz#c5eca79209dab853a03b2158c034c5166975feee"
@@ -5516,11 +5533,29 @@ react-is@^19.0.0, react-is@^19.1.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.1.tgz#038ebe313cf18e1fd1235d51c87360eb87f7c36a"
   integrity sha512-tr41fA15Vn8p4X9ntI+yCyeGSf1TlYaY5vlTZfQmeLBrFo3psOPX6HhTDnFNL9uj3EhP0KAQ80cugCl4b4BERA==
 
+react-native-device-info@^14.1.1:
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-14.1.1.tgz#f50c03902f87e4a99b1c51ed85163b795f02b3ea"
+  integrity sha512-lXFpe6DJmzbQXNLWxlMHP2xuTU5gwrKAvI8dCAZuERhW9eOXSubOQIesk9lIBnsi9pI19GMrcpJEvs4ARPRYmw==
+
+react-native-encrypted-storage@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-encrypted-storage/-/react-native-encrypted-storage-4.0.3.tgz#2a4d65459870511e8f4ccd22f02433dab7fa5e91"
+  integrity sha512-0pJA4Aj2S1PIJEbU7pN/Qvf7JIJx3hFywx+i+bLHtgK0/6Zryf1V2xVsWcrD50dfiu3jY1eN2gesQ5osGxE7jA==
+
 react-native-is-edge-to-edge@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.2.1.tgz#64e10851abd9d176cbf2b40562f751622bde3358"
   integrity sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q==
 
+<<<<<<< Updated upstream
+=======
+react-native-keep-awake@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-keep-awake/-/react-native-keep-awake-4.0.0.tgz#d89fdc3fb60b3cffa979ef37dc5816196df998a2"
+  integrity sha512-0Fotox+eLXQooeibVs3P60yASYUWjtRw9MZNmbuHt5UZQrgUrAKsE4jm7gTr4tPU1m1RkwGzcgUFpcOkh/ec7g==
+
+>>>>>>> Stashed changes
 react-native-linear-gradient@^2.8.3:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.8.3.tgz#9a116649f86d74747304ee13db325e20b21e564f"
@@ -5539,6 +5574,11 @@ react-native-screens@^4.16.0:
     react-freeze "^1.0.0"
     react-native-is-edge-to-edge "^1.2.1"
     warn-once "^0.1.0"
+
+react-native-sound@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.12.0.tgz#c1502e7760efa7ca06c38b8ae0435518eae33ef8"
+  integrity sha512-uOtM/PJ8+xmuXwgS2WMYEcokE/oFE8MV6glZHmB5RYHZ+yzD/0Z7cDL+QJpetTYBbEFOirfcE42o6YfPMJfJfg==
 
 react-native@0.79.0:
   version "0.79.0"
@@ -6647,3 +6687,13 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zego-express-engine-reactnative@^3.22.0:
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/zego-express-engine-reactnative/-/zego-express-engine-reactnative-3.22.0.tgz#0ddc4630ffa40ffc75784b0065e78afffbad7d7d"
+  integrity sha512-7jzfyVuTP/nUBfF4bLaQ80juWsIkBvW57ooBxqMEpmarcZs9hdWTNQszsYJcjWrKdhCU7iVKtuCX3vmbjT6nRQ==
+
+zego-zim-react-native@^2.22.0:
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/zego-zim-react-native/-/zego-zim-react-native-2.22.0.tgz#b45d5e426bd88e32bc6b785e21cb37812bb587af"
+  integrity sha512-ftq5qw7YUBYK461Pq9P6Vlsq/nnnJQguMY2ttnrrB3Jjv0J+ujqOWnWov1GXRH50p2USVzeHflcwmQQQWswBtA==

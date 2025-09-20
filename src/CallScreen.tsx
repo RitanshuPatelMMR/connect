@@ -1,14 +1,55 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+// src/Callscreen.tsx
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { ZegoUIKitPrebuiltCall, GROUP_VIDEO_CALL_CONFIG } from '@zegocloud/zego-uikit-prebuilt-call-rn';
+import { useNavigation } from '@react-navigation/native';
 
-const Callscreen = () => {
-  return (
-    <View>
-      <Text>Callscreen</Text>
-    </View>
-  )
-}
 
-export default Callscreen
+const Callscreen: React.FC = () => {
+ const navigation = useNavigation();
+ const config = {
+   appId: 1973833977,
+   appSign: '2429d2c573cff9fa2e44e0c0a066d81a82c0573224c8a28fbe52e415fabce9f7',
+ };
 
-const styles = StyleSheet.create({})
+
+ return (
+   <SafeAreaView style={{ flex: 1 }}>
+     <View style={styles.container}>
+       <ZegoUIKitPrebuiltCall
+         appID={config.appId}
+         appSign={config.appSign}
+         userID="12346"
+         userName="parth"
+         callID="mycallid"
+         config={{
+           ...GROUP_VIDEO_CALL_CONFIG, // <-- comma required here
+           onCallEnd: (callId, reason, duration) => {
+             navigation.goBack();
+           },
+           layout: {
+             mode: 'grid',
+           },
+           audioVideoConfig: {
+             showSoundWaveIndicator: true,
+           },
+         }}
+       />
+     </View>
+   </SafeAreaView>
+ );
+};
+
+
+export default Callscreen;
+
+
+const styles = StyleSheet.create({
+ container: {
+   flex: 1,
+   alignItems: 'center',
+   justifyContent: 'center',
+   zIndex: 0,
+ },
+});
