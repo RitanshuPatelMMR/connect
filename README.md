@@ -1,4 +1,4 @@
-Connect App
+#Connect App
 
 This is a new React Native project, bootstrapped using @react-native-community/cli.
 
